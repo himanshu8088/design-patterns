@@ -7,8 +7,12 @@
 
   <ItemGroup>
     <Folder Include="BuilderDP\" />
-    <Folder Include="BuilderDP\Contracts\" />
-    <Folder Include="BuilderDP\Implementation\" />
-    <Folder Include="BuilderDP\Models\" />
+    <Folder Include="BuilderDP\Interfaces\" />
+    <Folder Include="BuilderDP\Implementations\" />
+    <Folder Include="BuilderDP\Entities\" />
+    <Folder Include="DecoratorDP\" />
+    <Folder Include="DecoratorDP\Entities\" />
+    <Folder Include="DecoratorDP\Implementations\" />
+    <Folder Include="DecoratorDP\Interfaces\" />
   </ItemGroup>
 </Project>
