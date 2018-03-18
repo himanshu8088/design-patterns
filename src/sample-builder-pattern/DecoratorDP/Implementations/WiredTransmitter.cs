@@ -4,18 +4,24 @@ namespace DesignPatterns.DecoratorDP.Implementations
 {
     public class WiredTransmitter : ITransmitter
     {
-        public WiredTransmitter()
+        private ISender _sender;
+        private IReceiver _receiver;
+
+        public WiredTransmitter(ISender sender, IReceiver receiver)
         {
+            _sender = sender;
+            _receiver = receiver;
         }
 
         public byte[] Recieve()
         {
-            throw new NotImplementedException();
+            var stream = _receiver.Receive();
+            return stream;
         }
 
-        public void Send(byte[] information)
+        public void Send(byte[] stream)
         {
-            throw new NotImplementedException();
+            _sender.Send(stream);
         }
     }
 }
