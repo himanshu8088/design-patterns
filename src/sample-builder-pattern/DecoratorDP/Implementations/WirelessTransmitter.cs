@@ -13,7 +13,7 @@ namespace DesignPatterns.DecoratorDP.Implementations
             throw new NotImplementedException();
         }
 
-        public void Send(byte[] information)
+        public void Send(byte[] stream)
         {
             throw new NotImplementedException();
         }
