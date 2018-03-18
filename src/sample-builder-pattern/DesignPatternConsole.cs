@@ -3,8 +3,17 @@ using System.Collections.Generic;
 
 namespace DesignPatterns
 {
-    public class BuilderPatternConsole{
+    public class DesignPatternConsole{
+
         public static void Main(string[] args){
+            BuilderPattern builderPattern = new BuilderPattern();
+            builderPattern.Run();
+        }
+
+    }
+
+    public class BuilderPattern{
+        public void Run(){
             
             VehicleBuilder carBuilder =new CarBuilder();
             List<Cylinder> cylinders = new List<Cylinder>()
