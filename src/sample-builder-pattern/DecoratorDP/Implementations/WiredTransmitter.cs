@@ -1,5 +1,6 @@
 ﻿using System;
 using DesignPatterns.DecoratorDP.Interfaces;
+using System.Diagnostics;
 namespace DesignPatterns.DecoratorDP.Implementations
 {
     public class WiredTransmitter : ITransmitter
@@ -15,12 +16,14 @@ namespace DesignPatterns.DecoratorDP.Implementations
 
         public byte[] Recieve()
         {
+            Debug.WriteLine("Logged recieved message from wired transmitter");
             var stream = _receiver.Receive();
             return stream;
         }
 
         public void Send(byte[] stream)
         {
+            Debug.WriteLine("Logged sent message from wired transmitter");
             _sender.Send(stream);
         }
     }

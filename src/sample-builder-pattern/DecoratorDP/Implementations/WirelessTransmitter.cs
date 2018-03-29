@@ -4,18 +4,21 @@ namespace DesignPatterns.DecoratorDP.Implementations
 {
     public class WirelessTransmitter : ITransmitter
     {
+        private byte[] _stream;
+
         public WirelessTransmitter()
         {
+            _stream = new byte[] { };
         }
 
         public byte[] Recieve()
         {
-            throw new NotImplementedException();
+            return _stream;
         }
 
         public void Send(byte[] stream)
         {
-            throw new NotImplementedException();
+            _stream = stream;
         }
     }
 }

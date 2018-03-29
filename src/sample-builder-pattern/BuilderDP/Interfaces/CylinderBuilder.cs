@@ -1,4 +1,5 @@
-﻿namespace DesignPatterns
+﻿using DesignPatterns.BuilderDP.Entities;
+namespace DesignPatterns.BuilderDP.Interfaces
 {
     public abstract class CylinderBuilder : Builder<Cylinder>
     {

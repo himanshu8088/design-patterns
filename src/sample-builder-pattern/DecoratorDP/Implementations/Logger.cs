@@ -1,5 +1,6 @@
 ﻿using System;
 using DesignPatterns.DecoratorDP.Interfaces;
+using System.Diagnostics;
 namespace DesignPatterns.DecoratorDP.Implementations
 {
     public class Logger : ILogger
@@ -10,7 +11,7 @@ namespace DesignPatterns.DecoratorDP.Implementations
 
         public void Log(string information)
         {
-            throw new NotImplementedException();
+            Debug.WriteLine($"Logged successfully: {information}");
         }
     }
 }

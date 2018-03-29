@@ -1,14 +1,23 @@
 using DesignPatterns.DecoratorDP;
+using DesignPatterns.SingletonDP;
+using DesignPatterns.BuilderDP;
+using DesignPatterns.CommandDP;
 namespace DesignPatterns
 {
     public class DesignPatternConsole{
 
         public static void Main(string[] args){
-            BuilderPattern builderPattern = new BuilderPattern();
+            Pattern builderPattern = new BuilderPattern();
             builderPattern.Run();
 
-            DecoratorPattern decoratorPattern = new DecoratorPattern();
+            Pattern decoratorPattern = new DecoratorPattern();
             decoratorPattern.Run();
+
+            Pattern singletonPattern = new SingletonPattern();
+            singletonPattern.Run();
+
+            Pattern commandPattern = new CommandPattern();
+            commandPattern.Run();
         }
     }
 }

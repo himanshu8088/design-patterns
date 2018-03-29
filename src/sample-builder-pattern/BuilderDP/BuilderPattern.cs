@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using DesignPatterns.BuilderDP.Interfaces;
+using DesignPatterns.BuilderDP.Implementaions;
+using DesignPatterns.BuilderDP.Entities;
 
-namespace DesignPatterns
+namespace DesignPatterns.BuilderDP
 {
-    public class BuilderPattern
+    public class BuilderPattern : Pattern
     {
-        public void Run()
+        public override void Run()
         {
-
+            base.Run();
             VehicleBuilder carBuilder = new CarBuilder();
             List<Cylinder> cylinders = new List<Cylinder>()
             {
@@ -20,7 +24,7 @@ namespace DesignPatterns
                                    .WithNumberOfWheels(4)
                                    .WithCylinders(cylinders)
                                    .Build();
-            Console.WriteLine("Success");
+            Debug.WriteLine("Car builded successfully");
         }
     }
 }

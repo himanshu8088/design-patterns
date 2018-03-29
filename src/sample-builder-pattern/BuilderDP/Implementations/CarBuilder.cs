@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using DesignPatterns.BuilderDP.Interfaces;
+using DesignPatterns.BuilderDP.Entities;
 
-namespace DesignPatterns
+namespace DesignPatterns.BuilderDP.Implementaions
 {
     public class CarBuilder : VehicleBuilder
     {

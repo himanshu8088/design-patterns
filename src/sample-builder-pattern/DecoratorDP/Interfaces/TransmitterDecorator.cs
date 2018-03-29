@@ -11,14 +11,8 @@ namespace DesignPatterns.DecoratorDP.Interfaces
             Transmitter = transmitter;
         }
 
-        public virtual byte[] Recieve()
-        {
-            return Transmitter.Recieve();
-        }
+        public abstract byte[] Recieve();
 
-        public virtual void Send(byte[] information)
-        {
-            Transmitter.Send(information);
-        }
+        public abstract void Send(byte[] information);
     }
 }

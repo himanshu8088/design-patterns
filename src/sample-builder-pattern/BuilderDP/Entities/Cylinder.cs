@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns
+﻿namespace DesignPatterns.BuilderDP.Entities
 {
     public class Cylinder
     {

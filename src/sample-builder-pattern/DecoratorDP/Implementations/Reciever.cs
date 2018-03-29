@@ -1,5 +1,6 @@
 ﻿using System;
 using DesignPatterns.DecoratorDP.Interfaces;
+using System.Diagnostics;
 namespace DesignPatterns.DecoratorDP.Implementations
 {
     public class Reciever:IReceiver
@@ -10,7 +11,8 @@ namespace DesignPatterns.DecoratorDP.Implementations
 
         public byte[] Receive()
         {
-            throw new NotImplementedException();
+            Debug.WriteLine("Message Received Successfully");
+            return new byte[] { 00, 01};
         }
     }
 }

@@ -14,5 +14,11 @@
     <Folder Include="DecoratorDP\Entities\" />
     <Folder Include="DecoratorDP\Implementations\" />
     <Folder Include="DecoratorDP\Interfaces\" />
+    <Folder Include="SingletonDP\" />
+    <Folder Include="FactoryDP\" />
+    <Folder Include="CommandDP\" />
+    <Folder Include="CommandDP\Entities\" />
+    <Folder Include="CommandDP\Implementations\" />
+    <Folder Include="CommandDP\Interfaces\" />
   </ItemGroup>
 </Project>

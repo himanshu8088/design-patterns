@@ -4,10 +4,11 @@ using DesignPatterns.DecoratorDP.Implementations;
 using DesignPatterns.DecoratorDP.Interfaces;
 namespace DesignPatterns.DecoratorDP
 {
-    public class DecoratorPattern
+    public class DecoratorPattern : Pattern
     {
-        public void Run()
+        public override void Run()
         {
+            base.Run();
             Message message = GetMessage();
             ITransmitter transmitter = GetLoggableTransmitter();
             transmitter.Send(message.GetStream());

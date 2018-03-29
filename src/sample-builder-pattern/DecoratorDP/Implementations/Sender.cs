@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using DesignPatterns.DecoratorDP.Interfaces;
 namespace DesignPatterns.DecoratorDP.Implementations
 {
@@ -10,7 +11,8 @@ namespace DesignPatterns.DecoratorDP.Implementations
 
         public void Send(byte[] stream)
         {
-            throw new NotImplementedException();
+            Debug.WriteLine("Message Sent Successfully");
+            return;
         }
     }
 }

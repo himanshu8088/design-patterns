@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DesignPatterns
+namespace DesignPatterns.BuilderDP.Entities
 {
     public class Vehicle
     {
